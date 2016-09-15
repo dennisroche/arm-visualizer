@@ -114,9 +114,10 @@ export class DiagramComponent implements OnInit, OnDestroy {
 
         this.cy.layout({
           name: 'breadthfirst',
+          fit: true,
           directed: true,
           padding: 70,
-          spacingFactor: 1.1,
+          spacingFactor: 0.6,
           avoidOverlap: true
         });
       },
